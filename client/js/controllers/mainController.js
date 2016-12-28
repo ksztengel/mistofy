@@ -1,5 +1,5 @@
 'use strict'
-app.controller('MainController', function($scope, MusicService) {
+app.controller('MainController', function($scope, MusicService, $http) {
     console.log("in the MainController");
 
     $scope.artist = {}
@@ -10,4 +10,9 @@ app.controller('MainController', function($scope, MusicService) {
 
         })
     }
+    MusicService.musixmatch().then(data=>{
+      console.log('data', data.body);
+      var stuff = JSON.parse(data.data.body)
+      console.log('stuff',stuff);
+    })
 })
