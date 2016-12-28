@@ -6,13 +6,16 @@ app.controller('MainController', function($scope, MusicService, $http) {
 
     $scope.submitArtist = function(artist) {
         console.log('artist', artist);
-        MusicService.artistName(artist).then(artist => {
+
+        MusicService.artistName($scope.artist).then(artist => {
+
+        MusicService.musixmatch($scope.artist).then(data=>{
+
+            var trackInfo = JSON.parse(data.data.body)
+            console.log('trackInfo', trackInfo);
+
+          })
 
         })
     }
-    MusicService.musixmatch().then(data=>{
-      console.log('data', data.body);
-      var stuff = JSON.parse(data.data.body)
-      console.log('stuff',stuff);
-    })
 })
