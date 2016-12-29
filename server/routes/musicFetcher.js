@@ -4,6 +4,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
+    console.log("requested index route", req.body);
 
     let artist_name = req.query.artist
 
@@ -12,7 +13,6 @@ router.get('/', function(req, res, next) {
 
     request(url, function(error, response, html) {
 
-      console.log("requested index route", req.body);
         // console.log('response', response);
         res.json(response)
 
