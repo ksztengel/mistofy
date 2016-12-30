@@ -9,8 +9,8 @@
             </div>
         </div>
     </form>
-
-      <p>{{trackInfo.message.body.track_list["0"].track.track_name}}</p>
+      <div ng-repeat="track in trackInfo"
+      <p>{{trackInfo[$index].track.track_name}}</p>
 
 
 </div>

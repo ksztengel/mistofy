@@ -13,10 +13,11 @@ app.controller('MainController', function($scope, MusicService, $http, $rootScop
 
                 var trackInfo = JSON.parse(data.data.body)
 
-                $rootScope.trackInfo = trackInfo
+                $rootScope.trackInfo = trackInfo.message.body.track_list
+
                 // var trackArray = Object.values(trackInfo)
 
-                console.log('trackInfo', trackInfo);
+                console.log('trackInfo', $rootScope.trackInfo);
 
             })
 

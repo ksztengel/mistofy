@@ -6,3 +6,11 @@ body {
 a {
   color: #00B7FF;
 }
+
+.gradient {
+  background-image:
+    radial-gradient(
+      #d7ccc8,
+      #a1887f
+    );
+}
