@@ -1,16 +1,16 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
-
 a {
-  color: #00B7FF;
+    color: #00B7FF;
+}
+.gradient {
+    background-image: radial-gradient( #d7ccc8, #a1887f);
 }
 
-.gradient {
-  background-image:
-    radial-gradient(
-      #d7ccc8,
-      #a1887f
-    );
+/* icon prefix focus color */
+
+.input-field .prefix.active {
+    color: #000;
 }

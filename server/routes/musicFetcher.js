@@ -12,8 +12,6 @@ router.get('/', function(req, res, next) {
 
 
     request(url, function(error, response, html) {
-
-        // console.log('response', response);
         res.json(response)
 
     })

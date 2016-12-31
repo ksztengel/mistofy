@@ -1,0 +1,175 @@
+{
+
+    "events": [{
+
+        "start_date": {
+            "year": "1955"
+        },
+        "text": {
+            "text": "<p>The African-American Civil Rights Movement (1955–1968) began.</p>"
+        }
+    }, {
+
+        "start_date": {
+
+            "month": "8",
+            "day": "28",
+            "year": "1955"
+        },
+        "text": {
+            "text": "<p>Emmett Till  was kidnapped, beaten and murdered in Money, Mississippi  after reportedly flirting with a white woman; with the pictures of his open casket funeral, and the acquittal of his captors, the public reaction of Till's death helped spark the Civil Rights Movement.</p>"
+        }
+    }, {
+
+        "start_date": {
+
+            "month": "12",
+            "day": "1",
+            "year": "1955"
+        },
+        "text": {
+            "text": "Rosa Parks  was arrested in Montgomery, Alabama  after refusing to give up her bus seat to a white passenger, inciting the 386-day Montgomery Bus Boycott Reverend Dr. Martin Luther King Jr."
+        }
+    }, {
+        "start_date": {
+            "month": "9",
+            "day": "4",
+            "year": "1957"
+        },
+        "text": {
+
+            "text": "Arkansas National Guard was called to prevent African-American students from integrating in the Little Rock Central High School. They were known as the Little Rock Nine."
+        }
+    }, {
+
+        "start_date": {
+            "month": "9",
+            "day": "23",
+            "year": "1957"
+        },
+        "text": {
+
+            "text": "The Civil Rights Act of 1957, primarily a voting rights bill, was signed into law."
+        }
+    }, {
+        "start_date": {
+            "month": "1",
+            "day": "31",
+            "year": "1958"
+        },
+        "text": {
+            "text": "Explorer 1: The first U.S. satellite was launched into space."
+        }
+    }, {
+        "start_date": {
+            "year": "1958"
+        },
+        "text": {
+            "text": "Jack Kilby invented the integrated circuit."
+        }
+    },  {
+        "start_date": {
+          "month": "2",
+          "day": "4",
+          "year": "1959"
+        },
+        "text": {
+            "headline": "The Day the Music Died",
+            "text": "usicians Buddy Holly, Ritchie Valens, J. P. 'The Big Bopper' Richardson, and pilot, Roger Peterson, were killed in a plane accident."
+        }
+    }, {
+
+        "start_date": {
+          "month": "2",
+          "day": "1",
+          "year": "1960"
+        },
+        "text": {
+
+            "text": "The Greensboro sit-ins, sparked by the refusal of four African American college students to move from a segregated lunch counter, began similar widespread acts of civil disobedience  to protest Jim Crow laws."
+        }
+    },  {
+        "start_date": {
+          "month": "5",
+          "day": "1",
+          "year": "1960"
+        },
+        "text": {
+
+            "text": "  CIA U-2 spy plane was shot down while flying a reconnaissance mission over Soviet airspace."
+        }
+    }, {
+        "start_date": {
+          "month": "12",
+          "day": "5",
+          "year": "1960"
+        },
+        "text": {
+
+            "text": "Boynton v. Virginia: In a 7–2 ruling, the Supreme Court ruled that African-Americans were protected from racial segregation on buses by the Interstate Commerce Act."
+        }
+    }, {
+        "start_date": {
+          "month": "1",
+          "day": "3",
+          "year": "1961"
+        },
+        "text": {
+            "headline": "Married Life",
+            "text": "The United States broke diplomatic relations  with Cuba."
+        }
+    }, {
+
+        "start_date": {
+          "month": "3",
+          "day": "1",
+          "year": "1961"
+        },
+        "text": {
+
+            "text": "President Kennedy signed Executive Order 10924, establishing the Peace Corps."
+        }
+    }, {
+
+        "start_date": {
+          "month": "4",
+          "day": "17",
+          "year": "1961"
+        },
+        "text": {
+            "text": "Bay of Pigs Invasion: The failed U.S. led invasion and attempted coup d'état of Cuban Prime Minister Fidel Castro took place."
+        }
+    }, {
+
+        "start_date": {
+          "month": "5",
+          "day": "4",
+          "year": "1961"
+        },
+        "text": {
+
+            "text": "The Freedom Rides began in Washington D.C. after the failure to enforce the Supreme Court's ruling in Boynton v. Virginia."
+        }
+    }, {
+
+        "start_date": {
+
+          "year": "1961"
+        },
+        "text": {
+
+            "text": "Alan Shepard piloted the Freedom 7 capsule to become the first American in space.",
+            "text": "President Kennedy proposed the Apollo program, with the goal of 'landing a man on the moon and returning him safely to the earth'."
+        }
+    }, {
+
+        "start_date": {
+            "month": "2",
+            "day": "20",
+            "year": "1962"
+        },
+        "text": {
+            "text": "John Glenn  orbited the Earth."
+        }
+    }]
+}
