@@ -5,9 +5,6 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var request = require('request');
-var watson = require('watson-developer-cloud');
-
-
 var app = express();
 
 // view engine setup
@@ -25,6 +22,11 @@ app.use(express.static(path.join(__dirname, '../client')));
 var musicFetcher = require('./routes/musicFetcher');
 app.use('/musicFetcher', musicFetcher);
 
+var sentimentFetcher = require('./routes/sentimentFetcher');
+app.use('/sentimentFetcher', sentimentFetcher);
+
+var scraper = require('./routes/scraper');
+app.use('/scraper', scraper);
 
 // catch 404 and forward to error handler
 // app.use(function(req, res, next) {

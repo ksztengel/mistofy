@@ -10,7 +10,6 @@
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
     <link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
-    <!-- <link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/fonts/font.abril-droidsans.css"> -->
 
     <!-- Compiled and minified JavaScript -->
     <script src="//code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
@@ -37,11 +36,13 @@
 <body class="gradient">
 
     <div  ng-view></div>
-    <div id='timeline-embed' style="width: 100%; height: 300px"></div>
+  
+      <div id='timeline-embed' style="width: 100%; height: 300px"></div>
 
     <script type="text/javascript">
     timeline = new TL.Timeline('timeline-embed', './timeline.json');
     </script>
+
 </body>
 
 </html>
