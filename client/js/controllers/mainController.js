@@ -1,5 +1,5 @@
 'use strict'
-app.controller('MainController', function($scope, MusicService, $http, $rootScope) {
+app.controller('MainController', function($scope, MusicService, $http, $rootScope, ScraperService) {
     console.log("in the MainController");
 
     $scope.artist = {}
