@@ -13,7 +13,7 @@ app.config(function($routeProvider) {
         })
         .when('/song', {
             templateUrl: '../views/song.html',
-            controller: 'MainController'
+            controller: 'ScraperController'
         })
 
 });
