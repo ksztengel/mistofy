@@ -1,5 +1,5 @@
 'use strict'
-app.controller('MainController', function($scope, MusicService, $http, $rootScope, ScraperService, SentimentService) {
+app.controller('MainController', function($scope, MusicService, $http, $rootScope, ScraperService, SentimentService, SpotifyService) {
     // console.log("in the MainController");
 
     $scope.artist = {}
@@ -37,6 +37,16 @@ app.controller('MainController', function($scope, MusicService, $http, $rootScop
       ScraperService.getImage(track).then(image => {
 
         console.log('image:', image);
+
+      })
+    }
+
+    $scope.spotify = function(track){
+
+      SpotifyService.getSpotify(track).then(music => {
+
+        var title = JSON.parse(music.data.body)
+        console.log('music', title);
 
       })
     }
