@@ -19,5 +19,9 @@ app.config(function($routeProvider) {
             templateUrl: '../views/song.html',
             controller: 'SentimentController'
         })
+        .when('/spotify', {
+            templateUrl: '../views/song.html',
+            controller: 'SpotifyController'
+        })
 
 });

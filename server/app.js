@@ -28,6 +28,11 @@ app.use('/sentimentFetcher', sentimentFetcher);
 var scraper = require('./routes/scraper');
 app.use('/scraper', scraper);
 
+var spotify = require('./routes/spotify');
+app.use('/spotify', spotify);
+
+
+
 // catch 404 and forward to error handler
 // app.use(function(req, res, next) {
 //   var err = new Error('Not Found');
