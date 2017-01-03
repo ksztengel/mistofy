@@ -4,21 +4,25 @@ var watson = require('watson-developer-cloud');
 var AlchemyLanguageV1 = require('watson-developer-cloud/alchemy-language/v1');
 var router = express.Router();
 
+router.post('/', function(req, res) {
+    console.log('track:', req.body.track);
+    
+    var alchemy_language = new AlchemyLanguageV1({
+        api_key: 'ae3cac2e850b748ff85360a7a562ca1750059d82'
+    });
 
-var alchemy_language = new AlchemyLanguageV1({
-  api_key: 'ae3cac2e850b748ff85360a7a562ca1750059d82'
-});
+    var parameters = {
 
-var parameters = {
+        url: req.body.track
+    };
 
-  url: 'https://www.musixmatch.com/lyrics/Bob-Dylan/Tempest'
-};
-
-alchemy_language.emotion(parameters, function (err, response) {
-  if (err)
-    console.log('error:', err);
-  else
-    console.log(response);
+    alchemy_language.emotion(parameters, function(err, response) {
+        if (err)
+            console.log('error:', err);
+        else
+            console.log(response);
+            res.json(response)
+    })
 });
 
 module.exports = router;

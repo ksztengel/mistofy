@@ -1,6 +1,6 @@
 'use strict'
-app.controller('MainController', function($scope, MusicService, $http, $rootScope, ScraperService) {
-    console.log("in the MainController");
+app.controller('MainController', function($scope, MusicService, $http, $rootScope, ScraperService, SentimentService) {
+    // console.log("in the MainController");
 
     $scope.artist = {}
 
@@ -15,12 +15,31 @@ app.controller('MainController', function($scope, MusicService, $http, $rootScop
 
                 $rootScope.trackInfo = trackInfo.message.body.track_list
 
-                // var trackArray = Object.values(trackInfo)
-
                 console.log('trackInfo', $rootScope.trackInfo);
+
 
             })
 
         })
     }
+
+    $scope.sentiment = function(track){
+
+      SentimentService.getSentiment(track).then(emotions =>{
+
+        console.log('emotions:', emotions);
+
+      })
+    }
+
+    $scope.scraper = function(track){
+
+      ScraperService.getImage(track).then(image => {
+
+        console.log('image:', image);
+
+      })
+    }
+
+
 })

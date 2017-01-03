@@ -4,6 +4,6 @@ app.controller('ScraperController', function($scope, MusicService, $http, $rootS
     $scope.image = {}
 
     ScraperService.getImage().then(img =>{
-
+      console.log('img from ScraperController', img);
     })
 })

@@ -15,5 +15,9 @@ app.config(function($routeProvider) {
             templateUrl: '../views/song.html',
             controller: 'ScraperController'
         })
+        .when('/sentiment', {
+            templateUrl: '../views/song.html',
+            controller: 'SentimentController'
+        })
 
 });

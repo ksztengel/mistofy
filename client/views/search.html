@@ -10,8 +10,8 @@
         </div>
     </form>
     <div ng-repeat="track in trackInfo">
-        <p>{{trackInfo[$index].track.track_name}}</p>
-        <!-- <p>{{trackInfo[$index].track.first_release_date}}</p> -->
+        <p ng-click="sentiment(track.track.track_share_url); scraper(track.track.track_share_url)">{{trackInfo[$index].track.track_name}} {{trackInfo[$index].track.first_release_date | date : format : 'yyyy'}}</p>
+
 
 
     </div>

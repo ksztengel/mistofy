@@ -8,7 +8,6 @@ app.service('MusicService', function($http) {
 
         musixmatch: function(artist){
            return $http.get(`http://localhost:3000/musicFetcher/?artist=${artist.name}`)
-           console.log('url', `http://localhost:3000/musicFetcher/?artist=${artist.name}`);
 
         }
     }
