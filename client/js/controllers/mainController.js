@@ -1,6 +1,5 @@
 'use strict'
 app.controller('MainController', function($scope, MusicService, $http, $rootScope, ScraperService, SentimentService, SpotifyService) {
-    // console.log("in the MainController");
 
     $scope.artist = {}
 
@@ -23,32 +22,33 @@ app.controller('MainController', function($scope, MusicService, $http, $rootScop
         })
     }
 
-    $scope.sentiment = function(track){
+    $scope.sentiment = function(track) {
 
-      SentimentService.getSentiment(track).then(emotions =>{
+        SentimentService.getSentiment(track).then(emotions => {
 
-        console.log('emotions:', emotions);
+            console.log('emotions:', emotions);
 
-      })
+        })
     }
 
-    $scope.scraper = function(track){
+    $scope.scraper = function(track) {
 
-      ScraperService.getImage(track).then(image => {
+        ScraperService.getImage(track).then(image => {
 
-        console.log('image:', image);
+            console.log('image:', image);
 
-      })
+        })
     }
 
-    $scope.spotify = function(track){
+    $scope.spotify = function(track) {
 
-      SpotifyService.getSpotify(track).then(music => {
+        SpotifyService.getSpotify(track).then(music => {
 
-        var title = JSON.parse(music.data.body)
-        console.log('music', title);
+            var title = JSON.parse(music.data.body)
 
-      })
+            console.log('music', title);
+
+        })
     }
 
 

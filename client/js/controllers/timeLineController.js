@@ -21,3 +21,5 @@ app.controller('TimeLineController', function($scope, MusicService, $http, $root
     var timeline = new TL.Timeline('timeline-embed', $scope.events);
 
 })
+
+//for loop over data text: song title  date:  year
