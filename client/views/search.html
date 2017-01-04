@@ -1,19 +1,24 @@
+<div class ="row">
+  <h1>var mistofy = (music + history + spotify)</h1>
+</div>
+
 <div class="row">
-    <form name="artistForm" ng-submit="submitArtist(artist)" class="col s12">
+  <div class ="row">
+    <form name="artistForm" ng-submit="submitArtist(artist)" class="col s12" class ="center-align">
         <div class="row">
             <div class="input-field col s6">
+              <div class="card-panel white" "center-align">
                 <i class="material-icons prefix">mode_edit</i>
-                <textarea id="icon_prefix2" class="materialize-textarea" ng-model="artist.name"></textarea>
+                <textarea id="icon_prefix2" class="materialize-textarea" ng-model="artist.name" ></textarea>
                 <label for="icon_prefix2">Please Enter an Artist's Name.</label>
                 <input type="submit">
-            </div>
         </div>
     </form>
     <div ng-repeat="track in trackInfo">
-        <p ng-click="scraper(track.track.track_share_url); spotify(track.track.track_name);sentiment(image.data.lyrics)">
-          {{trackInfo[$index].track.track_name}} {{trackInfo[$index].track.first_release_date | date : format : 'yyyy'}}   {{lyrics}}</p>
-
-
-
-
-    </div>
+      <a href="#/song"><p ng-click="scraper(track.track.track_share_url); spotify(track.track.track_name)">
+        {{trackInfo[$index].track.track_name}} {{trackInfo[$index].track.first_release_date | date : format : 'yyyy'}}
+      </p>
+      <!-- {{image.lyrics}} -->
+      </div>
+      </div>
+  </div>

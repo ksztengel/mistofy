@@ -1,5 +1,5 @@
 'use strict'
-var app = angular.module("mistofy", ['ngRoute', 'ngAnimate'])
+var app = angular.module("mistofy", ['ngRoute', 'ngAnimate', 'ngSanitize'])
 
 app.config(function($routeProvider) {
     $routeProvider
@@ -13,7 +13,7 @@ app.config(function($routeProvider) {
         })
         .when('/song', {
             templateUrl: '../views/song.html',
-            controller: 'ScraperController'
+            controller: 'MainController'
         })
         .when('/sentiment', {
             templateUrl: '../views/song.html',
