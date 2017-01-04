@@ -22,20 +22,35 @@ app.controller('MainController', function($scope, MusicService, $http, $rootScop
         })
     }
 
-    $scope.sentiment = function(track) {
-
-        SentimentService.getSentiment(track).then(emotions => {
-
-            console.log('emotions:', emotions);
-
-        })
-    }
 
     $scope.scraper = function(track) {
 
         ScraperService.getImage(track).then(image => {
 
-            console.log('image:', image);
+            var lyrics = image.data.lyrics
+            var image = image.data.img
+            console.log('lyrics:', lyrics);
+            console.log('image', image);
+
+
+        })
+    }
+
+    $scope.sentiment = function(lyrics) {
+
+        SentimentService.getSentiment(lyrics).then(emotions => {
+
+            console.log('emotions:', emotions);
+            var anger = emotions.data.docEmotions.anger
+            var disgust = emotions.data.docEmotions.disgust
+            var fear = emotions.data.docEmotions.fear
+            var joy = emotions.data.docEmotions.joy
+            var sadness = emotions.data.docEmotions.sadness
+            console.log("anger", anger);
+            console.log("disgust", disgust);
+            console.log("fear", fear);
+            console.log("joy", joy);
+            console.log("sadness", sadness);
 
         })
     }

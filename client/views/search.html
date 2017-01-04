@@ -10,7 +10,9 @@
         </div>
     </form>
     <div ng-repeat="track in trackInfo">
-        <p ng-click="sentiment(track.track.track_share_url); scraper(track.track.track_share_url); spotify(track.track.track_name)">{{trackInfo[$index].track.track_name}} {{trackInfo[$index].track.first_release_date | date : format : 'yyyy'}}</p>
+        <p ng-click="scraper(track.track.track_share_url); spotify(track.track.track_name);sentiment(image.data.lyrics)">
+          {{trackInfo[$index].track.track_name}} {{trackInfo[$index].track.first_release_date | date : format : 'yyyy'}}   {{lyrics}}</p>
+
 
 
 

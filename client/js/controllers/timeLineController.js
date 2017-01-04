@@ -23,3 +23,4 @@ app.controller('TimeLineController', function($scope, MusicService, $http, $root
 })
 
 //for loop over data text: song title  date:  year
+// {{trackInfo[$index].track.track_name}} {{trackInfo[$index].track.first_release_date | date : format : 'yyyy'}}

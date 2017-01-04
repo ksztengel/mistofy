@@ -2,11 +2,12 @@
 app.service('SentimentService', function($http) {
   console.log("in the SentimentService")
     return {
-        getSentiment: function(track) {
-            return $http.post('http://localhost:3000/sentimentFetcher', {track});
+        getSentiment: function() {
+            return $http.post('http://localhost:3000/sentimentFetcher');
 
 
         }
     }
 
 })
+//need to pass in lyrics  and {lyrics}
