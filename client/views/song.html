@@ -1,27 +1,25 @@
-  <div class="fixed-action-btn horizontal" id="nextButton" style="top: 4px; right: 4px;">
-   <a href = "/#/search" class="btn-floating btn-medium waves-effect waves-light red right-align"><i class="material-icons">search</i></a>
- </div>
-    <div class="row">
-        <div class="col s4">
-            <div class="card-panel white">
-                <img ng-src="{{image.img}}">
-            </div>
-        </div>
-        <div class="col s4 push 15 px" >
-            <div class="card-panel white">
-                <p>{{image.lyrics}}</p>
-                <iframe src='{{snippet}}' width="300" height="50" frameborder="0" allowtransparency="true"></iframe>
-            </div>
-        </div>
-        <div class="col s4">
-            <div class="card-panel white">
-                <!-- anger: {{(emotions.anger | number:2)*100}}% disgust: {{(emotions.disgust | number:2)*100}}% fear: {{(emotions.fear | number:2)*100}}% joy: {{(emotions.joy | number:2)*100}}% sadness: {{(emotions.sadness | number:2)*100}}% -->
-
-                <div id="chartDiv"></div>
-                <div zingchart id="chart-1" zc-json="myJson" zc-width="100%" zc-height="352px"></div>
-  </div>
-
-
-            </div>
+<div class="fixed-action-btn horizontal" id="nextButton" style="top: 4px; right: 4px;">
+    <a href="/#/search" class="btn-floating btn-medium waves-effect waves-light red right-align"><i class="material-icons">search</i></a>
+</div>
+<div class="row">
+    <div class="col s4">
+        <div class="card-panel white">
+            <img ng-src="{{image.img}}">
         </div>
     </div>
+    <div class="col s4 push 15 px">
+        <div class="card-panel white">
+            <p>{{image.lyrics}}</p>
+            <iframe src='{{snippet}}' width="300" height="50" frameborder="0" allowtransparency="true"></iframe>
+        </div>
+    </div>
+    <div class="col s4">
+        <div class="card-panel white">
+            <div id="chartDiv"></div>
+            <div zingchart id="chart-1" zc-json="myJson" zc-width="100%" zc-height="352px"></div>
+        </div>
+
+
+    </div>
+</div>
+</div>

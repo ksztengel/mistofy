@@ -1,6 +1,6 @@
 
 <div class="row">
-    <h1>var <a href = "/search" ng-click="showForm =!showForm">mistofy</a> = (music + history + spotify)</h1>
+    <h1>var <a href = "#/search" ng-click="showForm =!showForm">mistofy</a> = (music + history + spotify)</h1>
 </div>
 
 <div class="row">
@@ -11,7 +11,7 @@
             <input id="first_name" type="text" class="validate" ng-model="artist.name">
             <label for="first_name">Artist's Name</label>
             <div class="col s4 offset-s4">
-                <button class="btn waves-effect waves-light blue" type="submit" ng-click="showForm=false" name="action">Submit
+                <button class="btn waves-effect waves-light blue" type="submit" ng-click="showForm=false" name="action" ng-show="artistForm.$pristine">Submit
                     <i class="material-icons right">send</i>
                 </button>
             </div>
