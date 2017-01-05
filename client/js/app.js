@@ -1,6 +1,10 @@
 'use strict'
 var app = angular.module("mistofy", ['ngRoute', 'ngAnimate', 'ngSanitize'])
-
+app.config(function($sceProvider) {
+  // Completely disable SCE.  For demonstration purposes only!
+  // Do not use in new projects.
+  $sceProvider.enabled(false);
+});
 app.config(function($routeProvider) {
     $routeProvider
         .when('/', {

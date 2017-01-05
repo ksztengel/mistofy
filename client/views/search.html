@@ -3,7 +3,12 @@
 </div>
 
 <div class="row">
-  <div class ="row">
+  <div class ="row"></div>
+  <div class ="row"></div>
+  <div class ="row"></div>
+  <div class ="row"></div>
+  <div class ="row"></div>
+
     <form name="artistForm" ng-submit="submitArtist(artist)" class="col s12" class ="center-align">
         <div class="row">
             <div class="input-field col s6">
@@ -14,6 +19,18 @@
                 <input type="submit">
         </div>
     </form>
+    <!-- <div class="preloader-wrapper big active">
+    <div class="spinner-layer spinner-blue-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div><div class="gap-patch">
+        <div class="circle"></div>
+      </div><div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div> -->
+
     <div ng-repeat="track in trackInfo">
       <a href="#/song"><p ng-click="scraper(track.track.track_share_url); spotify(track.track.track_name)">
         {{trackInfo[$index].track.track_name}} {{trackInfo[$index].track.first_release_date | date : format : 'yyyy'}}

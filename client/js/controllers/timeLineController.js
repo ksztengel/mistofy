@@ -7,8 +7,8 @@ app.controller('TimeLineController', function($scope, MusicService, $http, $root
     console.log('$scope.events', $scope.events);
 
     $scope.$watch("trackInfo", function(newTrackInfo, oldValue) {
-        console.log('newTrackInfo', newTrackInfo);
-        console.log('oldValue', oldValue);
+        // console.log('newTrackInfo', newTrackInfo);
+        // console.log('oldValue', oldValue);
         if (newTrackInfo == undefined) return
         var tlInfo = newTrackInfo.map(item => {
             var artist = item.track.artist_name;
@@ -23,14 +23,14 @@ app.controller('TimeLineController', function($scope, MusicService, $http, $root
 
                 "start_date": {
 
-
                     "year": year
                 },
                 "headline": artist,
                 "text": {
-                    "text": "<p style='background-color:#e3f2fd'>" + song + "</p>"
+                    "text": "<p style ='color:black; font-weight:bold'>" + song + "</p>"
                 }
             }
+
             $scope.events.events.push(tlData)
             var timeline = new TL.Timeline('timeline-embed', $scope.events);
         })
@@ -41,5 +41,4 @@ app.controller('TimeLineController', function($scope, MusicService, $http, $root
 
 })
 
-//for loop over data text: song title  date:  year
-// {{trackInfo[$index].track.track_name}} {{trackInfo[$index].track.first_release_date | date : format : 'yyyy'}}
+// tl-timemarker-content-container	div	The flag of the marker. You can set the flag's background color and text color here. When writing styles for this selector, preface this selector with .tl-timemarker (for slides other than the current slide) or .tl-timemarker.tl-timemarker-active (for the current slide).
