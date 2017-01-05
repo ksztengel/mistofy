@@ -1,5 +1,5 @@
 'use strict'
-var app = angular.module("mistofy", ['ngRoute', 'ngAnimate', 'ngSanitize'])
+var app = angular.module("mistofy", ['ngRoute', 'ngAnimate', 'ngSanitize', 'zingchart-angularjs'])
 app.config(function($sceProvider) {
   // Completely disable SCE.  For demonstration purposes only!
   // Do not use in new projects.
