@@ -13,7 +13,29 @@
         </div>
         <div class="col s4">
             <div class="card-panel white">
-                anger: {{(emotions.anger | number:2)*100}}% disgust: {{(emotions.disgust | number:2)*100}}% fear: {{(emotions.fear | number:2)*100}}% joy: {{(emotions.joy | number:2)*100}}% sadness: {{(emotions.sadness | number:2)*100}}%
+                <!-- anger: {{(emotions.anger | number:2)*100}}% disgust: {{(emotions.disgust | number:2)*100}}% fear: {{(emotions.fear | number:2)*100}}% joy: {{(emotions.joy | number:2)*100}}% sadness: {{(emotions.sadness | number:2)*100}}% -->
+
+                <div id="chartDiv"></div>
+  <script>
+    var chartData = {
+      type: "pie",  // Specify your chart type here.
+      title: {
+        text: "Emotions" // Adds a title to your chart
+      },
+      legend: {}, // Creates an interactive legend
+      series: [  // Insert your series data here.
+          { values: [35, 42, 67, 89]},
+          { values: [28, 40, 39, 36]}
+      ]
+    };
+    zingchart.render({ // Render Method[3]
+      id: "chartDiv",
+      data: chartData,
+      height: 352,
+      width: 600
+    });
+  </script>
+              
             </div>
         </div>
     </div>

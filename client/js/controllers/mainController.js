@@ -49,11 +49,6 @@ app.controller('MainController', function($scope, MusicService, $http, $rootScop
                 var joy = emotions.data.docEmotions.joy
                 var sadness = emotions.data.docEmotions.sadness
 
-                console.log("anger", anger);
-                console.log("disgust", disgust);
-                console.log("fear", fear);
-                console.log("joy", joy);
-                console.log("sadness", sadness);
 
             })
 

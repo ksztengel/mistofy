@@ -545,42 +545,6 @@ app.service('TimeLineService', function($http) {
                     "text": {
                         "text": "Chicago City Police clashed with anti-war protesters  at the 1968 Democratic National Convention  in Chicago."
                     }
-                }, {
-
-                    "start_date": {
-                        "month": "8",
-                        "year": "1968"
-                    },
-                    "text": {
-                        "text": "Chicago City Police clashed with anti-war protesters  at the 1968 Democratic National Convention  in Chicago."
-                    }
-                }, {
-
-                    "start_date": {
-                        "month": "8",
-                        "year": "1968"
-                    },
-                    "text": {
-                        "text": "Chicago City Police clashed with anti-war protesters  at the 1968 Democratic National Convention  in Chicago."
-                    }
-                }, {
-
-                    "start_date": {
-                        "month": "8",
-                        "year": "1968"
-                    },
-                    "text": {
-                        "text": "Chicago City Police clashed with anti-war protesters  at the 1968 Democratic National Convention  in Chicago."
-                    }
-                }, {
-
-                    "start_date": {
-                        "month": "8",
-                        "year": "1968"
-                    },
-                    "text": {
-                        "text": "Chicago City Police clashed with anti-war protesters  at the 1968 Democratic National Convention  in Chicago."
-                    }
                 }]
             }
 

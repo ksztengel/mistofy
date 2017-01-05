@@ -3,22 +3,20 @@
 </div>
 
 <div class="row">
-  <div class ="row"></div>
-  <div class ="row"></div>
-  <div class ="row"></div>
-  <div class ="row"></div>
-  <div class ="row"></div>
+  <div class="col s4"></div>
 
     <form name="artistForm" ng-submit="submitArtist(artist)" class="col s12" class ="center-align">
-        <div class="row">
-            <div class="input-field col s6">
-              <div class="card-panel white" "center-align">
+        <!-- <div class="row"> -->
+            <div class="input-field col s4 offset-s4">
+              <div class="card-panel white">
                 <i class="material-icons prefix">mode_edit</i>
-                <textarea id="icon_prefix2" class="materialize-textarea" ng-model="artist.name" ></textarea>
+                <input id="icon_prefix2" class="materialize-textarea" ng-model="artist.name"></input>
                 <label for="icon_prefix2">Please Enter an Artist's Name.</label>
                 <input type="submit">
         </div>
     </form>
+  </div>
+
     <!-- <div class="preloader-wrapper big active">
     <div class="spinner-layer spinner-blue-only">
       <div class="circle-clipper left">
@@ -30,12 +28,12 @@
       </div>
     </div>
   </div> -->
-
+  <!-- <select>
+  <option ng-repeat="track in trackInfo" value="{{row}}">{{{trackInfo[$index].track.track_name}}</option>
+</select> -->
     <div ng-repeat="track in trackInfo">
       <a href="#/song"><p ng-click="scraper(track.track.track_share_url); spotify(track.track.track_name)">
         {{trackInfo[$index].track.track_name}} {{trackInfo[$index].track.first_release_date | date : format : 'yyyy'}}
       </p>
-      <!-- {{image.lyrics}} -->
+
       </div>
-      </div>
-  </div>

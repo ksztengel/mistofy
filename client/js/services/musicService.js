@@ -13,3 +13,8 @@ app.service('MusicService', function($http) {
     }
 
 })
+
+$(document).ready(function() {
+  $('select').material_select();
+});
+    
