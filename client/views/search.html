@@ -1,6 +1,6 @@
 
 <div class="row">
-    <h1>var <a href = "#/search" ng-click="showForm =!showForm">mistofy</a> = (music + history + spotify)</h1>
+    <h1>var <a href = "/search" ng-click="showForm =!showForm">mistofy</a> = (music + history + spotify)</h1>
 </div>
 
 <div class="row">
@@ -37,17 +37,13 @@
           {{trackInfo[$index].track.track_name}} </option>
     </select>
 </p> -->
-
-<!-- <div class="preloader-wrapper big active">
-<div class="spinner-layer spinner-blue-only">
-<div class="circle-clipper left">
-<div class="circle"></div>
-</div><div class="gap-patch">
-<div class="circle"></div>
-</div><div class="circle-clipper right">
-<div class="circle"></div>
+<div ng-if="artist.loading" class="progress">
+    <div class="indeterminate"></div>
 </div>
-<! <a class='dropdown-button btn'data-activates='dropdown1'>Drop Me!</a>
+
+
+
+<!-- <a class='dropdown-button btn'data-activates='dropdown1'>Drop Me!</a>
 
 <div id='dropdown1' class='dropdown-content'>
 <li ng-repeat="track in trackInfo.track">{{track.track_name}}
