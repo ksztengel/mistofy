@@ -32,7 +32,7 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, '../client/index.html')));
+app.use(express.static(path.join(__dirname, '../client')));
 
 var musicFetcher = require('./routes/musicFetcher');
 app.use('/musicFetcher', musicFetcher);
@@ -80,7 +80,7 @@ app.use(function(err, req, res, next) {
 });
 
 const port = process.env.PORT || 8000;
-
+//
 app.listen(port, () => {
     if (app.get('env') !== 'test') {
         // eslint-disable-next-line no-console

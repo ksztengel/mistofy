@@ -8,7 +8,7 @@ app.config(function($sceProvider) {
 app.config(function($routeProvider) {
     $routeProvider
         .when('/', {
-            templateUrl: '../views/landing.html',
+            templateUrl: '../views/search.html',
             controller: 'MainController'
         })
         .when('/search', {
@@ -27,5 +27,6 @@ app.config(function($routeProvider) {
             templateUrl: '../views/song.html',
             controller: 'SpotifyController'
         })
+
 
 });
