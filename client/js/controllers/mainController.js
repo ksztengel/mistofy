@@ -23,7 +23,7 @@ app.controller('MainController', function($scope, MusicService, $http, $rootScop
     }
 
     $scope.artist.loading = false
-    $scope.myJson = {
+    $rootScope.myJson = {
         globals: {
             shadow: false,
             fontFamily: "Verdana",
@@ -31,8 +31,6 @@ app.controller('MainController', function($scope, MusicService, $http, $rootScop
         },
         type: "pie",
         backgroundColor: "#fff",
-
-
         legend: {
             layout: "x1",
             position: "1%",
@@ -43,7 +41,7 @@ app.controller('MainController', function($scope, MusicService, $http, $rootScop
             }
         },
         tooltip: {
-            text: "%v requests"
+            text: "%v feeling"
         },
         plot: {
             refAngle: "-90",
@@ -95,7 +93,7 @@ app.controller('MainController', function($scope, MusicService, $http, $rootScop
             SentimentService.getSentiment(lyrics).then(emotions => {
                 // console.log('emotions:', emotions);
                 $rootScope.emotions = emotions.data.docEmotions
-                graphIt(emotions.data.docEmotions, $scope.myJson.series)
+                graphIt(emotions.data.docEmotions, $rootScope.myJson.series)
                     // console.log('rootScope', emotions.data.docEmotions);
                     //
                     // var anger = emotions.data.docEmotions.anger
@@ -157,7 +155,7 @@ app.controller('MainController', function($scope, MusicService, $http, $rootScop
             // console.log("value", value);
             // items.values.push(value)
         }
-        console.log($scope.myJson);
+        console.log("myJson after graphIt", $rootScope.myJson);
         // emotionObj.forEach(item=> {
         //   // item.values.push(emotionObj[lables[idx]])
         // })
