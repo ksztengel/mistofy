@@ -1,3 +1,6 @@
+if (process.env.NODE_ENV !== 'production') {
+    require('dotenv').config();
+}
 var express = require('express');
 var path = require('path');
 // var favicon = require('serve-favicon');
@@ -6,6 +9,18 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var request = require('request');
 var app = express();
+
+switch (app.get('env')) {
+    case 'development':
+        app.use(logger('dev'));
+        break;
+
+    case 'production':
+        app.use(logger('short'));
+        break;
+
+    default:
+}
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -63,6 +78,15 @@ app.use(function(err, req, res, next) {
     error: {}
   });
 });
+
+// const port = process.env.PORT || 8000;
+//
+// app.listen(port, () => {
+//     if (app.get('env') !== 'test') {
+//         // eslint-disable-next-line no-console
+//         console.log('Listening on port', port);
+//     }
+// });
 
 
 module.exports = app;
