@@ -539,11 +539,187 @@ app.service('TimeLineService', function($http) {
                 }, {
 
                     "start_date": {
-                        "month": "8",
-                        "year": "1968"
+                        "month": "6",
+                        "year": "1971"
                     },
                     "text": {
-                        "text": "Chicago City Police clashed with anti-war protesters  at the 1968 Democratic National Convention  in Chicago."
+                        "text": "Pentagon Papers: The New York Times  publishes its first story on the classified 7,000-page Department of Defense study, leaked by study participant Daniel Ellsberg , on the U.S.'s political-military involvement in Vietnam since 1945."
+                    }
+                }, {
+
+                    "start_date": {
+                      "month": "6",
+                      "day":"17",
+                      "year": "1972"
+                    },
+                    "text": {
+                        "text": "Watergate burglaries: Five men were arrested for the burglary of the Democratic National Committee headquarters at the Watergate complex  in Washington, D.C."
+                    }
+                }, {
+
+                    "start_date": {
+                        "month": "1",
+                        "year": "1973"
+                    },
+                    "text": {
+                        "text": "Roe v. Wade: The Supreme Court ruled that state laws banning abortion before 24 weeks as unconstitutional."
+                    }
+                }, {
+
+                    "start_date": {
+                      "month": "8",
+                      "day":"9",
+                      "year": "1974"
+                    },
+                    "text": {
+                        "text": "President Richard Nixon  becomes the first and only President to resign from office. After submitting his resignation in an address to the nation the evening before, Nixon stated that 'the interest of the Nation must always come before any personal considerations'."
+                    }
+                }, {
+
+                    "start_date": {
+                        "month": "4",
+                        "year": "1975"
+                    },
+                    "text": {
+                        "text": "Bill Gates founded Microsoft."
+                    }
+                }, {
+
+                    "start_date": {
+                      "month": "11",
+                      "day":"2",
+                      "year": "1976"
+                    },
+                    "text": {
+                        "text": "U.S. presidential election, 1976: Jimmy Carter defeats incumbent Gerald Ford, becoming the first candidate from the Deep South to win since the Civil War."
+                    }
+                }, {
+
+                    "start_date": {
+                        "month": "5",
+                        "year": "1977"
+                    },
+                    "text": {
+                        "text": "Star Wars is released and goes on to become the highest-grossing film of its time."
+                    }
+                }, {
+
+                    "start_date": {
+                      "month": "11",
+                      "day":"27",
+                      "year": "1978"
+                    },
+                    "text": {
+                        "text": "Moscone–Milk assassinations: Harvey Milk , the first openly gay person elected to public office, and San Francisco Mayor  George Moscone , were assassinated by Dan White in San Francisco."
+                    }
+                }, {
+
+                    "start_date": {
+                        "month": "11",
+                        "year": "1979"
+                    },
+                    "text": {
+                        "text": "Iran hostage crisis: The U.S. embassy in Tehran  was raided by student activists of the Iranian Revolution  after overthrown CIA instated Shah Mohammad Reza Pahlavi was allowed into the U.S.; beginning the 444-day capture of the embassy and the holding of fifty-two American embassy personnel."
+                    }
+                }, {
+
+                    "start_date": {
+                      "month": "12",
+                      "day":"8",
+                      "year": "1980"
+                    },
+                    "text": {
+                        "text": "Musician John Lennon  was assassinated  outside of The Dakota in New York City."
+                    }
+                }, {
+
+                    "start_date": {
+                        "month": "3",
+                        "year": "1981"
+                    },
+                    "text": {
+                        "text": "Reagan assassination attempt: President Reagan and three others were injured after an assassination attempt of the President by Hilton Washington in Washington D.C."
+                    }
+                }, {
+
+                    "start_date": {
+                        "month": "6",
+                        "year": "1982"
+                    },
+                    "text": {
+                        "text": "Anti-nuclear protests  were held at Central Park  in New York City, with nearly one million peaceful demonstrators protesting the arms race ."
+                    }
+                }, {
+
+                    "start_date": {
+                        "month": "4",
+                        "year": "1983"
+                    },
+                    "text": {
+                        "text": "1983 United States embassy bombing: The U.S. embassy in Beirut  was bombed by members of the Islamic Jihad Organization  (IJO), killing 63 people, including 17 U.S. government personnel."
+                    }
+                }, {
+
+                    "start_date": {
+                        "month": "4",
+                        "year": "1984"
+                    },
+                    "text": {
+                        "text": "U.S. Secretary of Health and Human Services Margaret Heckler announces Dr. Robert Gallo  and fellow NCI  researcher's discovery of HTLV-III  as the virus that causes AIDS."
+                    }
+                }, {
+
+                    "start_date": {
+                        "month": "6",
+                        "year": "1985"
+                    },
+                    "text": {
+                        "text": "Live Aid, a concert attended by 100,000 people and watched by 1.9 billion viewers in 150 countries at the John F. Kennedy Stadium in Philadelphia , was held, raising global awareness of famine in Ethiopia."
+                    }
+                }, {
+
+                    "start_date": {
+                        "month": "4",
+                        "year": "1986"
+                    },
+                    "text": {
+                        "text": "Space Shuttle Challenger disaster: The Space Shuttle Challenger exploded due to a leak in the shuttle's solid rocket booster  73 seconds after departing from the Kennedy Space Center , killing all seven crew members aboard, including school teacher Christa McAuliffe ."
+                    }
+                }, {
+
+                    "start_date": {
+                        "month": "10",
+                        "year": "1987"
+                    },
+                    "text": {
+                        "text": "Black Monday: The Dow Jones Industrial Average  fell 508 points in a single session, losing 22.6% of its value"
+                    }
+                }, {
+
+                    "start_date": {
+                        "month": "11",
+                        "year": "1988"
+                    },
+                    "text": {
+                        "text": "Morris worm , the first computer worm  distributed via the Internet, was launched."
+                    }
+                }, {
+
+                    "start_date": {
+                        "month": "12",
+                        "year": "1989"
+                    },
+                    "text": {
+                        "text": "The United States invades Panama in an attempt to overthrow military dictator Manuel Noriega, who had been indicted in the United States on drug trafficking charges and was accused of suppressing democracy in Panama and endangering U.S. nationals."
+                    }
+                }, {
+
+                    "start_date": {
+                        "month": "8",
+                        "year": "1990"
+                    },
+                    "text": {
+                        "text": "Gulf War: Iraqi President Saddam Hussein  leads the deployment of 140,000 Iraqi troops in the invasion of Kuwait."
                     }
                 }]
             }

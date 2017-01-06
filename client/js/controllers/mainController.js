@@ -70,7 +70,7 @@ app.controller('MainController', function($scope, MusicService, $http, $rootScop
 
         })
     }
-    // var values = []
+    var values = []
     var docEmotions = $rootScope.emotions
     // {
     //   anger: 0.99,
@@ -134,21 +134,21 @@ app.controller('MainController', function($scope, MusicService, $http, $rootScop
             values: [31],
             backgroundColor: "#1976d2",
         }]
+        // var items = $scope.myJson.series;
+        // var keys = [ 'anger', 'disgust', 'fear', 'joy', 'sadness' ]
+        // //emotion obj comes from watson
+        // // series is $scope.series
+        // // keys comes from really hard coded values
+        // // when you get the motion obj back,  set it to a variable and call the graphIt function
+        // function graphIt(emotionObj,series){
+        //   series.forEach(item=> {
+        //     item.values.push(emotionObj[item['text']])
+        //     // item.values.push(emotionObj[lables[idx]])
+        //   })
+        // }
+        // graphIt(docEmotions,items)
+        //
+        // console.log('values', myJson.series);
     };
 
-    // let items = $scope.myJson.series;
-    // var keys = [ 'anger', 'disgust', 'fear', 'joy', 'sadness' ]
-    // //emotion obj comes from watson
-    // // series is $scope.series
-    // // keys comes from really hard coded values
-    // // when you get the motion obj back,  set it to a variable and call the graphIt function
-    // function graphIt(emotionObj,series){
-    //   myJson.series.forEach(item=> {
-    //     item.values.push(emotionObj[item['text']])
-    //     // item.values.push(emotionObj[lables[idx]])
-    //   })
-    // }
-    // graphIt(docEmotions,items)
-    //
-    // console.log('values', myJson.series);
 });

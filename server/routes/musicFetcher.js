@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
 
     let artist_name = req.query.artist
 
-    url = `http://api.musixmatch.com/ws/1.1/track.search?apikey=039bb7c9d51f22a7e8c0b6e09187e48d&q_artist=   ${artist_name}&s_track_release_date&page_size=30`;
+    url = `http://api.musixmatch.com/ws/1.1/track.search?apikey=039bb7c9d51f22a7e8c0b6e09187e48d&q_artist=   ${artist_name}&s_track_release_date&page_size=35`;
 
 
     request(url, function(error, response, html) {
