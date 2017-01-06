@@ -79,14 +79,14 @@ app.use(function(err, req, res, next) {
   });
 });
 
-// const port = process.env.PORT || 8000;
-//
-// app.listen(port, () => {
-//     if (app.get('env') !== 'test') {
-//         // eslint-disable-next-line no-console
-//         console.log('Listening on port', port);
-//     }
-// });
+const port = process.env.PORT || 8000;
+
+app.listen(port, () => {
+    if (app.get('env') !== 'test') {
+        // eslint-disable-next-line no-console
+        console.log('Listening on port', port);
+    }
+});
 
 
 module.exports = app;
