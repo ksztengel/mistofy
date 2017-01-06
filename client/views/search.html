@@ -22,9 +22,10 @@
           <p ng-click="scraper(track.track.track_share_url); spotify(track.track.track_name)">
             {{trackInfo[$index].track.track_name}} {{trackInfo[$index].track.first_release_date | date : format : 'yyyy'}}
           </p>
-          <div ng-if="artist.loading" class="progress">
-            <div class="indeterminate"></div>
           </div>
         </div>
     </div>
   </div>
+
+  <div ng-if="artist.loading" class="progress">
+    <div class="indeterminate"></div>

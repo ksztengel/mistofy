@@ -4,11 +4,10 @@ app.controller('MainController', function($scope, MusicService, $http, $rootScop
     $scope.artist = {}
     $scope.artist.loading = false
     $scope.submitArtist = function(artist) {
-        console.log('artist', artist);
-        $scope.artist.loading = true
+
+    $scope.artist.loading = true
 
         MusicService.artistName($scope.artist).then(artist => {
-
 
             MusicService.musixmatch($scope.artist).then(data => {
 
