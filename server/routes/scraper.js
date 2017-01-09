@@ -10,9 +10,11 @@ router.post('/', function(req, res) {
     url = req.body.track
 
     request(url, function(error, response, body) {
+      console.log("body in scraper", body);
         if (!error) {
             var $ = cheerio.load(body);
             var img;
+            var lyrics;
 
 
             $('.banner-album-image img').filter(function() {
@@ -22,7 +24,6 @@ router.post('/', function(req, res) {
                 console.log('img:', img);
             })
 
-              var lyrics;
             $('.mxm-lyrics__content').filter(function() {
                 var data = $(this);
                 lyrics = data.text();
@@ -30,7 +31,10 @@ router.post('/', function(req, res) {
                 console.log('lyrics:', lyrics);
             })
 
-            res.json({img, lyrics})
+            res.json({
+                img,
+                lyrics
+            })
 
         }
     })
