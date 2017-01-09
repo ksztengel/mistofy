@@ -87,20 +87,12 @@ app.controller('MainController', function($scope, MusicService, $http, $rootScop
 
         }).then(() => {
 
-            // var items = $scope.myJson.series;
             console.log('sentiment was fired! here are the lyrics', $rootScope.lyrics);
             var lyrics = $rootScope.lyrics
             SentimentService.getSentiment(lyrics).then(emotions => {
                 // console.log('emotions:', emotions);
                 $rootScope.emotions = emotions.data.docEmotions
                 graphIt(emotions.data.docEmotions, $rootScope.myJson.series)
-                    // console.log('rootScope', emotions.data.docEmotions);
-                    //
-                    // var anger = emotions.data.docEmotions.anger
-                    // var disgust = emotions.data.docEmotions.disgust
-                    // var fear = emotions.data.docEmotions.fear
-                    // var joy = emotions.data.docEmotions.joy
-                    // var sadness = emotions.data.docEmotions.sadness
 
 
             })
@@ -124,19 +116,7 @@ app.controller('MainController', function($scope, MusicService, $http, $rootScop
 
             })
         }
-        // var values = []
-        // var docEmotions = $rootScope.emotions
-        // console.log('docEmotions', docEmotions);
-        // {
-        //   anger: 0.99,
-        //   disgust: 0.12,
-        //   fear: 0.11,
-        //   joy: 0.23,
-        //   sadness: 0.11
-        // }
 
-    // var emotionObj = $rootScope.emotions;
-    // var keys = [ 'anger', 'disgust', 'fear', 'joy', 'sadness' ]
     //emotion obj comes from watson
     // series is $scope.series
     // keys comes from really hard coded values
@@ -160,7 +140,5 @@ app.controller('MainController', function($scope, MusicService, $http, $rootScop
         //   // item.values.push(emotionObj[lables[idx]])
         // })
     }
-    // graphIt(emotionObj,items)
 
-    // console.log('values', myJson.series);
 });
