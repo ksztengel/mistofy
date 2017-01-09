@@ -16,9 +16,9 @@ app.controller('TimeLineController', function($scope, MusicService, $http, $root
             var song = item.track.track_name
 
             // console.log('item=========',item.track);
-            console.log("artist", artist);
-            console.log("year", year);
-            console.log("song", song);
+            // console.log("artist", artist);
+            // console.log("year", year);
+            // console.log("song", song);
             var tlData = {
 
                 "start_date": {
