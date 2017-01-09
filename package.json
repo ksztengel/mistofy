@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./server/bin/www",
-    "nodemon": "nodemon /app/app.js"
+    "nodemon": "nodemon app.js"
 
   },
   "engines": {
