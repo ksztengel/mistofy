@@ -1,7 +1,7 @@
 app.directive('timeLine', function() {
     return {
         restrict: 'E',
-        templateUrl: '../../views/timeline.html',
+        templateUrl: '../../views/timeLine.html',
         controller: 'TimeLineController'
         }
     })
